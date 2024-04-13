@@ -93,7 +93,7 @@ export default function HomePage() {
             alt="MeteorMate"
             className="object-scale-down max-h-7 drop-shadow-md rounded-md mt-3"
           />
-          <div className="w-80  h-12 bg-white rounded-xl mt-5 cursor-pointer text-gray-400 font-mono flex flex-col justify-center text-xl pl-4">
+          <div className="w-80  h-12 bg-white rounded-xl mt-5 cursor-pointer text-gray-400 font-mono flex flex-col justify-center text-xl pl-4" onClick={()=>navigate('/search')}>
             Search
           </div>
           <Player
