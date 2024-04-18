@@ -37,7 +37,7 @@ export default function AlertPage() {
           </h2>
 
           {alerts.length === 0 && (
-            <h2 className="text-2xl text-white font-bold font-serif tracking-wider mt-3 lg:text-3xl">
+            <h2 className="text-xl text-white font-bold font-serif text-center tracking-wider mt-3 lg:text-2xl">
               No current weather alerts in you area!!
             </h2>
           )}
