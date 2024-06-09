@@ -120,9 +120,9 @@ export async function loader({ params }) {
   const PreviousDate = formatDate(previousDate);
   const PreviousWeekDate = formatDate(previousWeekDate);
   if (params.type === "1") {
-    url = `https://api.weatherbit.io/v2.0/history/daily?lat=${latitude}&lon=${longitude}&start_date=${PreviousWeekDate}&end_date=${CurrentDate}&tz=local&key=f99f01ee4bc241f9bcb04e52054fef37`;
+    url = `https://api.weatherbit.io/v2.0/history/daily?lat=${latitude}&lon=${longitude}&start_date=${PreviousWeekDate}&end_date=${CurrentDate}&tz=local&key=b5c69ab7e327472ba2a9cf60ca0aebbd`;
   } else {
-    url = `https://api.weatherbit.io/v2.0/history/hourly?lat=${latitude}&lon=${longitude}&start_date=${PreviousDate}&end_date=${CurrentDate}&tz=local&key=f99f01ee4bc241f9bcb04e52054fef37`;
+    url = `https://api.weatherbit.io/v2.0/history/hourly?lat=${latitude}&lon=${longitude}&start_date=${PreviousDate}&end_date=${CurrentDate}&tz=local&key=b5c69ab7e327472ba2a9cf60ca0aebbd`;
   }
 
   const response = await fetch(url, {

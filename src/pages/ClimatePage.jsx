@@ -94,7 +94,7 @@ export async function loader({ params }) {
   if (!latitude || !longitude) {
     return redirect("/");
   }
-  const url = `https://api.weatherbit.io/v2.0/normals?lat=${latitude}&lon=${longitude}&start_day=${startDate}&end_day=${endDate}&tp=daily&key=f99f01ee4bc241f9bcb04e52054fef37`;
+  const url = `https://api.weatherbit.io/v2.0/normals?lat=${latitude}&lon=${longitude}&start_day=${startDate}&end_day=${endDate}&tp=daily&key=b5c69ab7e327472ba2a9cf60ca0aebbd`;
 
   const response = await fetch(url, {
     method: "GET",
